@@ -1,0 +1,5 @@
+﻿{
+  "ConnectionStrings": {
+    "PlanifiqatorContextDb": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=PlanifiqatorDb;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=true;"
+  }
+}

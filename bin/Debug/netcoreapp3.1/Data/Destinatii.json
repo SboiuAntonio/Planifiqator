@@ -1,0 +1,146 @@
+[
+  {
+    "Tara": "Romania",
+    "Regiune": "Dobrogea",
+    "Oras": "Constanta",
+    "NumeDestinatie": "Cazino Constanta",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Romania",
+    "Regiune": "Transilvania",
+    "Oras": "Poiana Brasov",
+    "NumeDestinatie": "Aurelius Imparatul Romanilor",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Romania",
+    "Regiune": "Transilvania",
+    "Oras": "Paltinis",
+    "NumeDestinatie": "Hotel Cindrel",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Romania",
+    "Regiune": "Moldova",
+    "Oras": "Vatra Dornei",
+    "NumeDestinatie": "Telescaun Vatra Dornei",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Romania",
+    "Regiune": "Banat",
+    "Oras": "Carasova",
+    "NumeDestinatie": "Muntii Semenic",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Croatia",
+    "Regiune": "Dubrovnik",
+    "Oras": "Dubrovnik",
+    "NumeDestinatie": "Plaja Uvala Lapad",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Grecia",
+    "Regiune": "Epirus",
+    "Oras": "Corfu",
+    "NumeDestinatie": "Muzeul Arheologic din Corfu",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Italia",
+    "Regiune": "Sicilia",
+    "Oras": "Catania",
+    "NumeDestinatie": "Plaja din Catania",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Finlanda",
+    "Regiune": "Uusimaa",
+    "Oras": "Helsinki",
+    "NumeDestinatie": "Suomelinna",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Luxemburg",
+    "Regiune": "Luxemburg",
+    "Oras": "Luxemburg",
+    "NumeDestinatie": "Castelul Bock",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Egipt",
+    "Regiune": "Cairo",
+    "Oras": "Giza",
+    "NumeDestinatie": "Piramidele din Giza",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Thailanda",
+    "Regiune": "Bangkok",
+    "Oras": "Bangkok",
+    "NumeDestinatie": "Monumentul Victoriei",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Australia",
+    "Regiune": "Melbourne",
+    "Oras": "Melbourne",
+    "NumeDestinatie": "Coroana Melbourne",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Argentina",
+    "Regiune": "Buenos Aries",
+    "Oras": "Buenos Aries",
+    "NumeDestinatie": "Gradina Japoneza",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Peru",
+    "Regiune": "Cusco",
+    "Oras": "Santa Teresa",
+    "NumeDestinatie": "Machu Picchu",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Mexic",
+    "Regiune": "Puebla",
+    "Oras": "Popocatepetl",
+    "NumeDestinatie": "Popocatepetl",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Statele Unite",
+    "Regiune": "New Jersey",
+    "Oras": "New York",
+    "NumeDestinatie": "Statuia Libertatii",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  },
+  {
+    "Tara": "Statele Unite",
+    "Regiune": "New Jersey",
+    "Oras": "New York",
+    "NumeDestinatie": "Cladirea Flatiron",
+    "Rating": 0.0,
+    "NumarRatinguri": 0
+  }
+]

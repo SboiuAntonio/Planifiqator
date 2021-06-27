@@ -1,0 +1,13 @@
+navtext {
+  color: black
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin: 5px;
+  padding: 5px 10px;
+}

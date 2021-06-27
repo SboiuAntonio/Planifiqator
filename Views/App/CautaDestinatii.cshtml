@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Destinatie>
+<h1>Destinatii</h1>
+    <div asp-validation-summary="ModelOnly"></div>
+    <div id="registerForm" class="text-center">
+        <div class="col-md-12">
+            <div class="card card-body bg-light">
+                <form method="post">
+                    <label>Caută destinații </label>
+                    <input />
+                    <select id="destinatii" name="optiuni">
+                        <option value="Nu am preferință">Nu am preferință</option>
+                        <option value="Țară">Țară</option>
+                        <option value="Regiune">Regiune</option>
+                        <option value="Oraș">Oraș</option>
+                    </select>
+                    <input type="submit" class="btn btn-success" value="Caută" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        @foreach (var d in Model)
+        {
+            <div class="col-md-4">
+                <img src="~/images/@(d.Id).jpg" />
+                <h3></h3>
+                <ul class="list-inline" style="margin-left:10px">
+                    <li>Țara: @d.Tara</li>
+                    <li>Regiune: @d.Regiune</li>
+                    <li>Oraș: @d.Oras</li>
+                    <li>Nume: @d.NumeDestinatie</li>
+                    <li>Rating: @d.Rating</li>
+                    <select id="destinatii" name="optiuni">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <input type="submit" class="btn btn-success" value="Evaluează" />
+
+                </ul>
+            </div>
+        }
+        <p>Numar destinatii gasite: @Model.Count()</p>
+    </div>

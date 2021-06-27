@@ -1,0 +1,34 @@
+﻿@model Planifiqator.ViewModels.RegisterViewModel
+@{
+    ViewBag.Title = "Înregistrează-te!";
+}
+<div id="registerForm" class="text-center">
+    <div class="col-md-12">
+        <div class="card card-body bg-light">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly"></div>
+                <label asp-for="Nume">Nume utilizator </label>
+                <br />
+                <input asp-for="Nume" />
+                <br />
+                <span asp-validation-for="Nume" class="text-danger"></span>
+                <br />
+                <label asp-for="Parola">Parola </label>
+                <br />
+                <input type="password" asp-for="Parola" />
+                <br />
+                <span asp-validation-for="Parola" class="text-danger"></span>
+                <br />
+                <label asp-for="Email">Email </label>
+                <br />
+                <input type="email" asp-for="Email" />
+                <br />
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <br />
+                <input type="submit" class="btn btn-success" value="Înregistrează-te" />
+            </form>
+        </div>
+
+    </div>
+</div>
+

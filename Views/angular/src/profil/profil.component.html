@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bine ai venit la Planifiqator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap-grid.css" />
+</head>
+<body style="background-color:white">
+  <header class="container">
+    <nav class="navbar nav-tabs navbar-light bg-white navbar-expand-md d-lg-flex justify-content-center">
+      <div id="menu" class="navbar-collapse">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <img src="../assets/img/planifiqator.PNG" width="100" height="40" />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/profil">Profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/notite">Notite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cauta-destinatii">Cauta Destinatii</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/planificari">Planificari</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/clasament">Clasament</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Sign out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="registerForm" class="text-center">
+    <div class="col-md-12">
+      <div class="card card-body bg-light">
+        <form method="post">
+          <label style="margin-right:5px" for="Nume">Nume utilizator: </label>
+          <input style="margin-right:5px" [(ngModel)]="Nume" for="Nume" id="Nume" name="Nume">
+          <input routerLink="{{toProfilInitializer}}" name="putNume" (click)="putNume()" type="submit" value="Edit" class="btn btn-success" />
+          <br /><br />
+          <label style="margin-right:5px" for="Parola">Parola: </label>
+          <input style="margin-right:5px" [(ngModel)]="Parola" for="Parola" id="Parola" name="Parola" type="password">
+          <input routerLink="{{toProfilInitializer}}" name="putParola" (click)="putParola()" type="submit" value="Edit" class="btn btn-success" />
+          <br /><br />
+          <label style="margin-right:5px" for="Email">Email: </label>
+          <input style="margin-right:5px" [(ngModel)]="Email" for="Email" id="Email" name="Email">
+          <input routerLink="{{toProfilInitializer}}" name="putEmail" (click)="putEmail()" type="submit" value="Edit" class="btn btn-success" />
+          <br /><br />
+          <label style="margin-top:5px" for="Email">Numar monede:  {{Monede}} </label>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer style="margin-top:30px" class="container"><div class="text-center">© Planifiqator 2021</div></footer>
+  <div class="text-center"><a href="https://github.com/SboiuAntonio/Planifiqator" class="button">Github</a></div>
+  <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
