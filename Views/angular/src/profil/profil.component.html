@@ -39,15 +39,18 @@
     <div class="col-md-12">
       <div class="card card-body bg-light">
         <form method="post">
-          <label style="margin-right:5px" for="Nume">Nume utilizator: </label>
+          <label style="margin-right:5px" for="Nume">Nume utilizator </label>
+          <br />
           <input style="margin-right:5px" [(ngModel)]="Nume" for="Nume" id="Nume" name="Nume">
           <input routerLink="{{toProfilInitializer}}" name="putNume" (click)="putNume()" type="submit" value="Edit" class="btn btn-success" />
           <br /><br />
-          <label style="margin-right:5px" for="Parola">Parola: </label>
+          <label style="margin-right:5px" for="Parola">Parola </label>
+          <br />
           <input style="margin-right:5px" [(ngModel)]="Parola" for="Parola" id="Parola" name="Parola" type="password">
           <input routerLink="{{toProfilInitializer}}" name="putParola" (click)="putParola()" type="submit" value="Edit" class="btn btn-success" />
           <br /><br />
-          <label style="margin-right:5px" for="Email">Email: </label>
+          <label style="margin-right:5px" for="Email">Email </label>
+          <br />
           <input style="margin-right:5px" [(ngModel)]="Email" for="Email" id="Email" name="Email">
           <input routerLink="{{toProfilInitializer}}" name="putEmail" (click)="putEmail()" type="submit" value="Edit" class="btn btn-success" />
           <br /><br />
