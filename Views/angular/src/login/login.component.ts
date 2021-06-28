@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
       this.toastr.error('Completati toate campurile.', 'Campuri lipsa', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
     }
@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
           this.toastr.success('Conectarea s-a făcut cu succes!', 'Success', {
             enableHtml: false,
             closeButton: true,
-            timeOut: 1000,
+            timeOut: 5000,
             positionClass: 'toast-top-right'
           });
           console.log(data["id"])

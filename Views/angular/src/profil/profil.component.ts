@@ -35,7 +35,7 @@ export class ProfilComponent implements OnInit {
       this.toastr.error('Completati campul nume.', 'Campuri lipsa', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
     }
@@ -45,7 +45,7 @@ export class ProfilComponent implements OnInit {
           this.toastr.success('Numele s-a updatat cu succes', 'Success', {
             enableHtml: false,
             closeButton: true,
-            timeOut: 1000,
+            timeOut: 5000,
             positionClass: 'toast-top-right'
           });
           console.log(data["id"])

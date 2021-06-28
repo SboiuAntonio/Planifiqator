@@ -42,7 +42,7 @@ export class NotiteComponent implements OnInit {
           this.toastr.success('Notita inserata cu succes', 'Success', {
             enableHtml: false,
             closeButton: true,
-            timeOut: 3000,
+            timeOut: 5000,
             positionClass: 'toast-top-right'
           });
           this.putMonede(localStorage["Id"],2)
@@ -63,7 +63,7 @@ export class NotiteComponent implements OnInit {
       this.toastr.error('Completati toate campurile.', 'Campuri lipsa', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
     }
@@ -87,7 +87,7 @@ export class NotiteComponent implements OnInit {
       this.toastr.error('Utilizatorul nu este valid', 'Eroare', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
     }

@@ -33,7 +33,7 @@ export class RegisterComponent implements OnInit {
       this.toastr.error('Completati toate campurile.', 'Campuri lipsa', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
       this.NumeValid = "0";
@@ -43,7 +43,7 @@ export class RegisterComponent implements OnInit {
       this.toastr.error('Parola trebuie sa aiba minim 8 caractere', 'Parola scurta', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
       this.NumeValid = "0";
@@ -53,7 +53,7 @@ export class RegisterComponent implements OnInit {
       this.toastr.error('Datele sunt invalide', 'Date invalide', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
       this.NumeValid = "0";
@@ -71,7 +71,7 @@ export class RegisterComponent implements OnInit {
         this.toastr.success('Înregistrarea s-a făcut cu succes!', 'Success', {
           enableHtml: false,
           closeButton: true,
-          timeOut: 1000,
+          timeOut: 5000,
           positionClass: 'toast-top-right'
         });
       });

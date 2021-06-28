@@ -115,7 +115,7 @@ export class CautaDestinatiiComponent implements OnInit {
       this.toastr.error('Utilizatorul nu este valid sau nu ati introdus regiunea corecta', 'Eroare', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut:5000,
         positionClass: 'toast-top-right'
       });
     }
@@ -145,7 +145,7 @@ export class CautaDestinatiiComponent implements OnInit {
       this.toastr.error('Utilizatorul nu este valid sau orasul nu este corect', 'Eroare', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
     }
@@ -175,7 +175,7 @@ export class CautaDestinatiiComponent implements OnInit {
       this.toastr.error('Utilizatorul nu este valid sau nu s-a introdus un rating', 'Eroare', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
     }
@@ -194,7 +194,7 @@ export class CautaDestinatiiComponent implements OnInit {
       this.toastr.error('Utilizatorul nu este valid', 'Eroare', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
     }
@@ -211,7 +211,7 @@ export class CautaDestinatiiComponent implements OnInit {
       this.toastr.error('Data nu este valida, nu se poate insera vacanta', 'Eroare', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
     }

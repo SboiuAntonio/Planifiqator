@@ -30,7 +30,7 @@ export class PlanificariComponent implements OnInit {
       this.toastr.error('Utilizatorul nu este valid', 'Eroare', {
         enableHtml: false,
         closeButton: true,
-        timeOut: 1000,
+        timeOut: 5000,
         positionClass: 'toast-top-right'
       });
     }
