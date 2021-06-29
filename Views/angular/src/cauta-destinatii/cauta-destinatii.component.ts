@@ -82,7 +82,7 @@ export class CautaDestinatiiComponent implements OnInit {
   }
   getDestinatiiByTara() {
     this.Destinatii = []
-    if (this.Field == null || localStorage["Token"] == null) {
+    if (this.Field == "" || localStorage["Token"] == null) {
       this.toastr.error('Utilizatorul nu este valid sau nu ati introdus tara corecta' , 'Eroare', {
         enableHtml: false,
         closeButton: true,
@@ -113,7 +113,7 @@ export class CautaDestinatiiComponent implements OnInit {
   }
   getDestinatiiByRegiune() {
     this.Destinatii = []
-    if (this.Field == null || localStorage["Token"] == null || localStorage["Monede"] < 15) {
+    if (this.Field == "" || localStorage["Token"] == null || localStorage["Monede"] < 15) {
       this.toastr.error('Utilizatorul nu este valid sau nu ati introdus regiunea corecta', 'Eroare', {
         enableHtml: false,
         closeButton: true,
@@ -146,7 +146,7 @@ export class CautaDestinatiiComponent implements OnInit {
   }
   getDestinatiiByOras() {
     this.Destinatii = []
-    if (this.Field == null || localStorage["Token"] == null || localStorage["Monede"] < 15) {
+    if (this.Field == "" || localStorage["Token"] == null || localStorage["Monede"] < 15) {
       this.toastr.error('Utilizatorul nu este valid sau orasul nu este corect', 'Eroare', {
         enableHtml: false,
         closeButton: true,
