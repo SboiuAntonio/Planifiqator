@@ -22,6 +22,7 @@ export class CautaDestinatiiComponent implements OnInit {
   Field: any = []
   Rating: any
   Monede: any = localStorage["Monede"]
+  IdDest: any
 
   getMonede() {
     this.Monede = localStorage["Monede"]
@@ -43,7 +44,8 @@ export class CautaDestinatiiComponent implements OnInit {
     }
   }
   addRez(idDestinatie: any ) {
-    let data = (<HTMLSelectElement>document.getElementById('DataR')).value;
+    let data = (<HTMLSelectElement>document.getElementById("Data"+idDestinatie)).value;
+    console.log(data)
     let idUtilizator = localStorage["Id"]
     this.addRezervare(idUtilizator,idDestinatie,data) 
   }
@@ -160,7 +162,7 @@ export class CautaDestinatiiComponent implements OnInit {
             destinatie.Regiune = entry["regiune"];
             destinatie.Oras = entry["oras"];
             destinatie.NumeDestinatie = entry["numeDestinatie"];
-            destinatie.Rating = entry["rating"];
+            destinatie.Rating = Math.round(entry["rating"]*10)/10
             destinatie.NumarRatinguri = entry["numarRatinguri"];
             this.Destinatii.push(destinatie);
           }
@@ -170,8 +172,9 @@ export class CautaDestinatiiComponent implements OnInit {
     }
   }
   putRating(Id: any
-  ,Count: any) {
-    if (this.Rating == undefined && localStorage["Token"] == null) {
+    , Count: any) {
+    let rating = (<HTMLSelectElement>document.getElementById("ratinguri" +Id)).value;
+    if (localStorage["Token"] == null && rating === undefined) {
       this.toastr.error('Utilizatorul nu este valid sau nu s-a introdus un rating', 'Eroare', {
         enableHtml: false,
         closeButton: true,
@@ -180,7 +183,7 @@ export class CautaDestinatiiComponent implements OnInit {
       });
     }
     else {
-      this.dataService.PutRating(Id,Count,this.Rating).then(data => {
+      this.dataService.PutRating(Id,Count,rating).then(data => {
         if (data != null) {
           this.putMonede(localStorage["Id"], 2)
           this.getDestinatii()
@@ -207,7 +210,7 @@ export class CautaDestinatiiComponent implements OnInit {
     }
   }
   addRezervare(IdUtilizator: any, IdDestinatie: any, Data: any) {
-    if (localStorage["Token"] == null || Data == null || Data == undefined) {
+    if (localStorage["Token"] == null || Data === "" || Data === undefined) {
       this.toastr.error('Data nu este valida, nu se poate insera vacanta', 'Eroare', {
         enableHtml: false,
         closeButton: true,

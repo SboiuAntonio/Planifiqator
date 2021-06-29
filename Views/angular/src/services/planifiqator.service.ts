@@ -16,7 +16,7 @@ export class Destinatie {
   Regiune!: string;
   Oras!: string;
   NumeDestinatie!: string;
-  Rating!: string;
+  Rating!: number;
   NumarRatinguri!: string;
 }
 

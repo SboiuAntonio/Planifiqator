@@ -87,7 +87,7 @@
             <td>{{destinatie.Rating}}/5</td>
             <td>{{destinatie.NumarRatinguri}}</td>
             <td>
-              <select [(ngModel)]="Rating" id="ratinguri" name="note">
+              <select id="ratinguri{{destinatie.Id}}" name="note{{destinatie.Id}}">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -97,7 +97,7 @@
             </td>
             <td><input routerLink="{{toDestinatiiInitializer}}" (click)="putRating(destinatie.Id,destinatie.NumarRatinguri)" type="submit" class="btn btn-success" value="Evaluează" /></td>
             <td>
-              <input type="date" id="DataR" name="DataR" value="Data">
+              <input type="date" id="Data{{destinatie.Id}}" name="DataR" value="Data">
               <br />
               <input style="margin-top:10px" routerLink="{{toDestinatiiInitializer}}" (click)="addRez(destinatie.Id)" type="submit" class="btn btn-success" value="Rezervare" />
             </td>
