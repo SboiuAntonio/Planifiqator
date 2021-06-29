@@ -51,7 +51,7 @@ export class CautaDestinatiiComponent implements OnInit {
   }
   getAllDestinatii() {
     this.Destinatii = []
-    if (localStorage["Token"] == null || localStorage["Monede"]<15) {
+    if (localStorage["Token"] == null || localStorage["Monede"] < 15 || this.Field != "") {
       this.toastr.error('Utilizatorul nu este valid sau nu are suficiente monede', 'Eroare', {
         enableHtml: false,
         closeButton: true,
