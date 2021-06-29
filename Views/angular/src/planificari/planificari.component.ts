@@ -22,6 +22,9 @@ export class PlanificariComponent implements OnInit {
     var Id: any = localStorage["Id"];
     this.getPlanificari(Id)
   }
+  emptyStorage() {
+    localStorage.clear()
+  }
   getMonede() {
     this.Monede = localStorage["Monede"]
   }

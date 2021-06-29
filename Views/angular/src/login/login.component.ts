@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       this.dataService.Login(this.Nume, this.Parola).then(data =>   {
         if (data != null) {
           console.log(this.Nume, this.Parola);
-          this.toastr.success('Conectarea s-a făcut cu succes!', 'Success', {
+          this.toastr.success('Conectarea s-a făcut cu succes! ', 'Success', {
             enableHtml: false,
             closeButton: true,
             timeOut: 5000,

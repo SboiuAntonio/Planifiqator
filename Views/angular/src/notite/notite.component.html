@@ -14,6 +14,12 @@
             <img src="../assets/img/planifiqator.PNG" width="100" height="40" />
           </li>
           <li class="nav-item">
+            <a class="nav-link " href="/despre"><div id="navtext">Despre</div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/profil">Profil</a>
           </li>
           <li class="nav-item">
@@ -29,7 +35,7 @@
             <a class="nav-link" href="/clasament">Clasament</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login">Sign out</a>
+            <a (click)="emptyStorage()" class="nav-link" href="/login">Sign out</a>
           </li>
           <li style="margin-left:300px" class="nav-item">
             <a class="nav-link">{{Monede}} monede</a>

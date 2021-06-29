@@ -21,6 +21,9 @@ export class ClasamentComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  emptyStorage() {
+    localStorage.clear()
+  }
   getMonede() {
     this.Monede = localStorage["Monede"]
   }

@@ -10,7 +10,9 @@ import { UtilizatorNume } from '../services/planifiqator.service';
   styleUrls: ['./profil.component.css']
 })
 export class ProfilComponent implements OnInit {
-
+  emptyStorage() {
+    localStorage.clear()
+  }
 
   ngOnInit(): void {
     this.getMonede()
@@ -32,7 +34,7 @@ export class ProfilComponent implements OnInit {
   putNume() {
     console.log(this.Nume)
     if (this.Nume == null || localStorage["Token"]==null) {
-      this.toastr.error('Completati campul nume.', 'Campuri lipsa', {
+      this.toastr.error('Completati campul nume sau utilizator invalid.', 'Campuri lipsa', {
         enableHtml: false,
         closeButton: true,
         timeOut: 5000,

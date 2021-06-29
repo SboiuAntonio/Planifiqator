@@ -29,7 +29,7 @@ export class NotiteComponent implements OnInit {
   addNotita() {
     console.log(this.Nume, this.Continut)
     if (this.Nume == null || this.Nume.length < 6 || this.Continut.length<50 || localStorage["Token"] == null){
-      this.toastr.error('Completati toate campurile. Asigurati-va ca aveti minim 10 caractere la nume si 50 de caractere la continut', 'Eroare', {
+      this.toastr.error('Completati toate campurile. Asigurati-va ca aveti minim 10 caractere la nume si 50 de caractere la continut. Utilizatorul poate fi invalid', 'Eroare', {
         enableHtml: false,
         closeButton: true,
         timeOut: 5000,
@@ -56,11 +56,14 @@ export class NotiteComponent implements OnInit {
       });
     }
   }
+  emptyStorage() {
+    localStorage.clear()
+  }
   getAllNotite() {
     this.Notite = []
     console.log(this.UtilizatorId)
     if (localStorage["Token"] == null) {
-      this.toastr.error('Completati toate campurile.', 'Campuri lipsa', {
+      this.toastr.error('Completati toate campurile sau utilizator invalid.', 'Campuri lipsa', {
         enableHtml: false,
         closeButton: true,
         timeOut: 5000,

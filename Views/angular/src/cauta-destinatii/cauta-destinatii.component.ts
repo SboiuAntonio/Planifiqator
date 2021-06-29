@@ -141,6 +141,9 @@ export class CautaDestinatiiComponent implements OnInit {
       });
     }
   }
+  emptyStorage(){
+    localStorage.clear()
+  }
   getDestinatiiByOras() {
     this.Destinatii = []
     if (this.Field == null || localStorage["Token"] == null || localStorage["Monede"] < 15) {
