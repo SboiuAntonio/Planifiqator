@@ -49,16 +49,6 @@ export class RegisterComponent implements OnInit {
       this.NumeValid = "0";
       this.EmailValid = "0";
     }
-    else if (this.NumeValid == "0" || this.EmailValid == "0") {
-      this.toastr.error('Datele sunt invalide', 'Date invalide', {
-        enableHtml: false,
-        closeButton: true,
-        timeOut: 5000,
-        positionClass: 'toast-top-right'
-      });
-      this.NumeValid = "0";
-      this.EmailValid = "0";
-    } 
     else {
       let user: Utilizator = new Utilizator();
       user.Nume = this.Nume;
