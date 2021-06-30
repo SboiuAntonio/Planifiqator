@@ -24,6 +24,7 @@ export class CautaDestinatiiComponent implements OnInit {
   Monede: any = localStorage["Monede"]
   IdDest: any
 
+
   getMonede() {
     this.Monede = localStorage["Monede"]
   }
@@ -184,6 +185,7 @@ export class CautaDestinatiiComponent implements OnInit {
         timeOut: 5000,
         positionClass: 'toast-top-right'
       });
+      document.getElementById('buton'+Id)?.classList.add('hide')
     }
     else {
       this.dataService.PutRating(Id,Count,rating).then(data => {

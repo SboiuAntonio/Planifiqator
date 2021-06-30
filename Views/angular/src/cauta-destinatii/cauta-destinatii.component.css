@@ -16,3 +16,10 @@ a.button2 {
   -moz-appearance: button;
   text-decoration: none;
 }
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}

@@ -95,7 +95,7 @@
                 <option value="5">5</option>
               </select>
             </td>
-            <td><input routerLink="{{toDestinatiiInitializer}}" (click)="putRating(destinatie.Id,destinatie.NumarRatinguri)" type="submit" class="btn btn-success" value="Evaluează" /></td>
+            <td><input id="buton{{destinatie.Id}}" routerLink="{{toDestinatiiInitializer}}" (click)="putRating(destinatie.Id,destinatie.NumarRatinguri)" type="submit" class="btn btn-success" value="Evaluează" /></td>
             <td>
               <input type="date" id="Data{{destinatie.Id}}" name="DataR" value="Data">
               <br />
